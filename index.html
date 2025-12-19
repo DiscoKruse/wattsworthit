@@ -85,7 +85,7 @@
 <script>
 async function loadRevenueFromServer() {
     try {
-        const res = await fetch("/api/revenue.php", { cache: "no-store" });
+        const res = await fetch("/revenue.php", { cache: "no-store" });
         if (!res.ok) throw new Error("Revenue API failed");
 
         const data = await res.json();
